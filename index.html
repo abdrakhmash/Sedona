@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Sedona</title>
+        <link rel="stylesheet" href="sedona.css">
+    </head>
+    <body>
+        <header class="header main">
+            <nav class="header-navigation clearfix">
+                <ul>
+                    <a href="#"><li class="refs-info">ИНФОРМАЦИЯ</li></a>
+                    <a href="#"><li class="refs-media">ФОТО И ВИДЕО</li></a>
+                    <li class="logo"><img src="images/logo-top.png" alt="Логотип Седоны"></li>
+                    <a href="#"><li class="refs-map">КАРТ<span class="somefuckwithletterspacing">А  </span>ШТ<span class="somefuckwithletterspacing">АТА</span></li></a>
+                    <a href="#"><li class="refs-hotels">ГОСТИНИЦЫ</li></a>  
+                </ul>
+            </nav>
+            <div class="header-banner">
+                <div class="banner-welcome"><img src="images/Welcome.png"></div>
+                <div class="banner-gorgeous"><img src="images/to%20the%20gorgeous.png"></div>
+                <div class="banner-cityname"><img src="images/Sedona.png"></div>
+                <div class="banner-slogan"><img src="images/Because%20the%20Grand%20%20Canyon%20sucks_.png"></div>
+            </div>
+        </header>
+        <div class="contents contents-container">
+            <div class="contents-subtitle">
+                <h2>СЕДОНА — НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h2>
+                <p class="contents-text">РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ ЧЕМ ГРАНД КАНЬОН!</p>
+            </div>
+            <div class="features-container clearfix">
+                <div class="features features-one bluebox">
+                    <h2>НАСТОЯЩИЙ ГОРОДОК</h2>
+                    <p class="contents-text">№1</p>
+                    <p class="contents-text">СЕДОНА — НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+                </div>
+                <div class="features features-img"><img src="images/photo1.jpg" alt="Фото Седоны 1"></div>
+                <div class="features features-living secondLine">
+                    <div class="icon icon-living"></div>
+                    <h2>ЖИЛЬЕ</h2>
+                    <p class="contents-text">РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ МОТЕЛЕ, ВСЕ КАК В КИНО!</p>
+                </div>
+                <div class="features features-food secondLine">
+                    <div class="icon icon-food"></div>
+                    <h2>ЕДА</h2>
+                    <p class="contents-text">ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР, ВЫ НЕ РАЗОЧАРУЕТЕСЬ!</p>
+                </div>
+                <div class="features features-souvenirs secondLine">
+                    <div class="icon icon-souvenirs"></div>
+                    <h2>СУВЕНИРЫ</h2>
+                    <p class="contents-text">НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО ПРОИЗВОДСТВА!</p>
+                </div>
+                <div class="features features-img"><img src="images/photo2.jpg" alt="Фото Седоны 1"></div>
+                <div class="features features-second bluebox">
+                    <h2><span class="br"><!--СМОТРИ Я УБРАЛА <BR> ИЗ HTML-->ТАМ ЕСТЬ</span> МОСТ ДЬЯВОЛА</h2>
+                    <p class="contents-text">№2</p>
+                    <p class="contents-text">ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ КОНЕЧНО ВЫ ОСМЕЛИТЕСЬ</p>
+                </div>
+                <div class="features features-third lastLine">
+                    <h2>НЕБОЛЬШАЯ ПЛОЩАДЬ</h2>
+                    <p class="contents-text">№3</p>
+                    <p class="contents-text">ВСЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ <span class="br">НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</span></p>
+                </div>
+                <div class="features features-forth lastLine">
+                    <h2>КРАСИВАЯ ДОРОГА</h2>
+                    <p class="contents-text">№4</p>
+                    <p class="contents-text">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО!</p>
+                </div>
+                <div class="features features-fifth lastLine">
+                    <h2>МАЛО ТУРИСТОВ</h2>
+                    <p class="contents-text">№5</p>
+                    <p class="contents-text">БОЛЬШИНСТВО ЕДЕТ В ГРАНД-КАНЬОН И ТОЛПИТСЯ ТАМ</p>
+                </div>
+            </div>
+            <div class="trip-container">
+                <h2>ЗАИНТЕРЕСОВАЛИСЬ?</h2>
+                <p class="contents-text"><span class="textFirstline">УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ, </span>И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
+                <div class="trip-btn"><p>ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</p>
+                    <div class="trip-form">
+            <form method="get"> 
+               <fieldset class="date clearfix">
+                   <label class="date-subscribe">
+                       <input name="arrivalDate" type="date" value="26 октября 2017" valueAsDate>
+                       ДАТА ЗАЕЗДА:
+                   </label>
+                    <label class="date-subscribe">
+                        <input name="departDate" type="date">
+                        ДАТА ОТЪЕЗДА:
+                   </label>
+                </fieldset>
+                <fieldset class="number clearfix">
+                    <div>
+                    <label class="number-subscribe children clearfix">ДЕТИ:
+                        <div class="number-input">
+                            <button></button>
+                            <input name="children" type="number" min="0" value="0">
+                            <button class="plus"></button>
+                        </div>
+                    </label>
+                    </div>
+                    <div>
+                    <label class="number-subscribe persons">ВЗРОСЛЫЕ:
+                        <div  class="number-input">
+                            <button></button>
+                            <input name="persons" type="number" min="0" value="2">
+                            <button class="plus"></button>
+                        </div>
+                    </label>
+                    </div>
+                </fieldset>
+                <input type="submit" class="trip-form-btn bluebox" value="НАЙТИ">
+            </form>
+        </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d839089.7847992509!2d-112.23534139760692!3d34.76328846992683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1514307811819"></iframe>
+            <div class=" container-refs clearfix">
+                <div class="hashtag">#VISITSEDONA</div>
+                <div class="social">
+                <a href="#" alt="twitter"><div class="social-icon social-twitter"></div></a>
+                <a href="#" alt="fb"><div class="social-icon social-fb"></div></a>
+                <a href="#" alt="youtube"><div class="social-icon social-youtube"></div></a>
+                </div>
+                <div class="htmlAcademy">
+                <a href="#" alt="htmlacademy">
+                    <div class="creator"><div class="htmlLogo"></div>WEBSITE BY         
+                    </div>
+                </a>
+                </div>
+                <div class="second"></div>
+                <div class="third"></div>
+            </div>
+        </footer>
+    </body>
+</html>
