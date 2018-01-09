@@ -10,10 +10,10 @@
             <nav class="header-navigation clearfix">
                 <ul>
                     <a href="#"><li class="refs-info">ИНФОРМАЦИЯ</li></a>
-                    <a href="#"><li class="refs-media">ФОТО И ВИДЕО</li></a>
+                    <a href="https://www.google.ru/search?q=sedona+arizona+state+photo&newwindow=1&source=lnms&tbm=isch&sa=X&ved=0ahUKEwievMmxysXYAhXCJJoKHXraD_EQ_AUICigB&biw=1515&bih=780"><li class="refs-media">ФОТО И ВИДЕО</li></a>
                     <li class="logo"><img src="images/logo-top.png" alt="Логотип Седоны"></li>
                     <a href="#"><li class="refs-map">КАРТ<span class="somefuckwithletterspacing">А  </span>ШТ<span class="somefuckwithletterspacing">АТА</span></li></a>
-                    <a href="#"><li class="refs-hotels">ГОСТИНИЦЫ</li></a>  
+                    <a href="hotels.html"><li class="refs-hotels">ГОСТИНИЦЫ</li></a>  
                 </ul>
             </nav>
             <div class="header-banner">
@@ -133,5 +133,13 @@
                 <div class="third"></div>
             </div>
         </footer>
+        <script>
+             var link = document.querySelector(".rightbtn");
+             var popup = document.querySelector(".trip-form-off");
+             link.addEventListener("click", function(event) {
+             event.preventDefault();
+             popup.classList.toggle("trip-form-on");
+             });
+        </script>
     </body>
 </html>

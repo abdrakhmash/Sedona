@@ -1,6 +1,6 @@
 body {
     font-family: 'PT Sans';
-    font-size: 12px;
+    font-size: 14px;
     color:black;
     margin: 0px;
     padding: 0px;
@@ -241,17 +241,18 @@ h2 {
     color: #ffffff;
     background-color: #766357;   
 }
-.trip-btn p {
-    margin: 0px;
-    padding: 0px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    white-space: nowrap;
+.trip-btn .rightbtn {
+    padding-left: auto;
+    padding-right: auto;
+    height: 86px;
+    line-height: 86px;
+    cursor: pointer;
 }
-.trip-form {
-    z-index: 3000;
+.trip-form-off {
+    display: none;
+}
+.trip-form-on {
+    display: block;
     position: absolute;
     top: 86px;
     left: 0px;
@@ -263,14 +264,16 @@ h2 {
     color: #000000;
     font-size: 14px;
     text-align: left;
+    z-index: 999;
 }
-.trip-form fieldset {
+.trip-form-on fieldset {
     border: none;
     margin: 0px;
     padding: 0px;
 }
-.trip-form input[type="date"] {
+.trip-form-on input[type="date"] {
     float: right;
+    position: relative;
     box-sizing: border-box;
     font-family: 'PT Sans';
     font-size: 14px;
@@ -282,7 +285,7 @@ h2 {
     border: none;
     background-color: #f2f2f2;    
 }
-.trip-form label {
+.trip-form-on label {
     display: block;
     height: 38px;
     margin-bottom: 30px;
@@ -291,18 +294,26 @@ h2 {
     line-height: 38px;
 }
 
-.trip-form input[type="number"], input[type="date"] {
+.trip-form-on input[type="number"], input[type="date"] {
   -webkit-appearance: textfield;
   -moz-appearance: textfield;
   appearance: textfield;
 }
-.trip-form input[type="number"]::-webkit-inner-spin-button,
-.trip-form input[type="number"]::-webkit-outer-spin-button,
-.trip-form input[type="date"]::-webkit-inner-spin-button,
-.trip-form input[type="date"]::-webkit-outer-spin-button{
+.trip-form-on input[type="number"]::-webkit-inner-spin-button,
+.trip-form-on input[type="number"]::-webkit-outer-spin-button,
+.trip-form-on input[type="date"]::-webkit-inner-spin-button,
+.trip-form-on input[type="date"]::-webkit-outer-spin-button{
   -webkit-appearance: none;
 }
-
+.trip-form-on input[type="date"]::-webkit-calendar-picker-indicator {
+    position: absolute;
+    right: 0px;
+    height: 22px;
+    width: 21px;
+    color: transparent;
+    opacity: 1;
+    background: url("images/calendar.png") no-repeat 50% 50%;  
+}
 .number-input {
   border: none;
   display: inline-flex;
@@ -310,7 +321,10 @@ h2 {
     position: relative;
     top: -2px;
 }
-
+.persons .number-input {
+    position: relative;
+    left: 10px;
+}
 .number-input,
 .number-input * {
     background-color: #f2f2f2;
@@ -330,7 +344,7 @@ h2 {
   cursor: pointer;
     
 }
-.trip-form input[type=number] {
+.trip-form-on input[type=number] {
     font-family: 'PT Sans', sans-serif;
     padding: 0px;
     color: #000000;
