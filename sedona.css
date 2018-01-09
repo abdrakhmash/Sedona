@@ -465,17 +465,20 @@ label.children {
 .hotels.contents-container {
     padding: 0px;
     text-align: left;
-    position: relative;
-    top: -12px;
 }
 .search-panel {
     width: 1200px;
     height: 217px;
+    box-sizing: border-box;
+    padding-left: 72px;
+    padding-right: 72px;
+    padding-top: 29px;
     background: url("images/bg-hotels.jpg") no-repeat 0 -56px;
     color: #ffffff;
 }
 .search-panel p {
     font-size: 16px;
+    margin-top: 0px;
     margin-bottom: 0px;
 }
 .search-panel .subtitle {
