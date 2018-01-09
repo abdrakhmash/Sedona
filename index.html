@@ -93,18 +93,18 @@
                                     <div>
                                     <label class="number-subscribe children clearfix">ДЕТИ:
                                         <div class="number-input">
-                                            <button></button>
-                                            <input name="children" type="number" min="0" value="0">
-                                            <button class="plus"></button>
+                                            <div class="btn minus-btn-two">-</div>
+                                            <input name="children" id="childrenNumber" type="number" min="0" value="0">
+                                            <div class="btn plus-btn-two">+</div>
                                         </div>
                                     </label>
                                     </div>
                                     <div>
                                     <label class="number-subscribe persons">ВЗРОСЛЫЕ:
                                         <div  class="number-input">
-                                            <button></button>
-                                            <input name="persons" type="number" min="0" value="2">
-                                            <button class="plus"></button>
+                                            <div class="btn minus-btn-one">-</div>
+                                            <input name="person" type="number" min="0" value="2" id="personNumber">
+                                            <div class="btn plus-btn-one">+</div>
                                         </div>
                                     </label>
                                     </div>
@@ -141,6 +141,33 @@
              event.preventDefault();
              popup.classList.toggle("trip-form-on");
              });
+        </script>
+        <script>
+            var p = document.querySelector("#personNumber");
+            var ch = document.querySelector("#childrenNumber")
+            var upPerson = document.querySelector(".plus-btn-one");
+            var downPerson = document.querySelector(".minus-btn-one");
+            var upChildren = document.querySelector(".plus-btn-two");
+            var downChildren = document.querySelector(".minus-btn-two");
+            
+            var increase = function (element) {
+                element.value = parseInt(element.value) + 1;
+            };  
+            
+            var decrease = function (element) {
+                if (parseInt(element.value) < 1) {
+                    element.value = 0;
+                    }
+                 else  { 
+                     element.value = parseInt(element.value) - 1;
+                    };
+            };
+            
+                upPerson.addEventListener("click", function(){increase(p);});
+                upChildren.addEventListener("click", function(){increase(ch);});
+                downPerson.addEventListener("click", function(){decrease(p);});
+                downChildren.addEventListener("click", function(){decrease(ch);});
+            
         </script>
     </body>
 </html>
