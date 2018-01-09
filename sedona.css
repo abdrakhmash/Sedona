@@ -566,3 +566,89 @@ input[type="checkbox"]:checked + .checkbox-styled {
 .sortDown {
     background: url("images/sortDown.png") no-repeat 50% 50%;
 }
+.results {
+    position: relative;
+    height: 151px;
+    box-sizing: border-box;
+    padding-top: 31px;
+    padding-left: 72px;
+    padding-right: 72px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.result-items p {
+    margin: 0px;
+}
+.results-info {
+    float: left;
+    width: 258px;
+    margin-left: 30px;
+}
+.results-photo {
+    float: left;
+    width: 134px;
+    height: 90px;    
+}
+.results-name {
+    margin-top: 0px;
+    margin-bottom: 13px;
+    text-align: left;
+    line-height: 21px;
+}
+.results-type {
+    float: left;
+    width: 110px;
+    margin-right: 6px;
+    margin-bottom: 18px;
+    line-height: 14px;
+}
+.results-price {
+    float: left;
+    margin-bottom: 18px;
+    line-height: 14px;
+}
+.about-btn {
+    float: left;
+    width: 110px;
+    height: 27px;
+    text-align: center;
+    line-height: 26px;
+    font-weight: bold;
+}
+.booking-btn {
+    float: left;
+    margin-left: 6px;
+    width: 142px;
+    height: 27px;
+    text-align: center;
+    line-height: 26px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #766357;
+}
+.results .raiting {
+    float: right; 
+    width: 110px;
+}
+.results-stars {
+    float: right;
+    background: url("/images/star.png") repeat-x 0 0;
+    height: 18px;
+}
+.results-villas .results-stars {
+    width: 37px;
+}
+.results-desert  .results-stars {
+    width: 54px;
+}
+.results-amara .results-stars {
+    width: 72px;
+}
+.results-raiting {
+    float: right;
+    margin-top: 49px;
+    height: 27px;
+    width: 110px;
+    text-align: center;
+    line-height: 27px;
+    background-color: #f2f2f2;
+}
