@@ -519,5 +519,50 @@ input[type="checkbox"]:checked + .checkbox-styled {
     left: 40px;
     line-height: 21px;
 }
+.result.sorting-panel {
+    position: relative;
+    width: 1200px;
+    height: 87px;
+    box-sizing: border-box;
+    padding-left: 72px;
+    border-bottom: 1px solid #e5e5e5;
+    vertical-align: middle;
+    font-size: 12px;
+}
+.sorting-panel div {
+    display: inline-block;
+    line-height: 87px;
+    vertical-align: baseline;
+}
+.sorting-panel .found {
+    font-size: 21px;
+    font-weight: bold;
+}
+.sorting {
+    margin-left: 43px;
+    margin-right: 7px;
+    font-weight: bold;
+}
+.sorting-panel .sortBy {
+    margin-left: 30px;
+    border-bottom: 1px dotted #d0d0d0;
+    line-height: 18px; 
+    color: #d0d0d0;
+}
+.sorting-panel .btns {
+    float: right;
+    margin-right: 72px;
     margin-top: 32px;
+}
+.sort-btn {
+    float: right;
+    width: 10px;
+    height: 11px;
+    margin-left: 2px;
+}
+.sortUp {
+    background: url("images/sortUp.png") no-repeat 50% 50%;
+}
+.sortDown {
+    background: url("images/sortDown.png") no-repeat 50% 50%;
 }
