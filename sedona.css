@@ -476,16 +476,45 @@ label.children {
 }
 .search-panel p {
     font-size: 16px;
+    margin-bottom: 0px;
 }
 .search-panel .subtitle {
     font-weight: bold;
-}
-input[type="checkbox"] {
-    margin: 0px;
-    padding: 0px;
+    margin-bottom: 27px;
+    text-align: left;
+    line-height: 16px;
 }
 .checkbox {
     float: left;
-    margin-left: 72px;
+    width: 150px;
+    
+}
+.checkbox-option {
+    position: relative;
+    display: block;
+    margin-bottom: 22px;
+    height: 23px;
+}
+.checkbox-native{
+    display: none;
+}
+.checkbox-styled {
+    display: inline-block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 27px;
+    height: 23px;
+    background: url("/images/checkbox-off.png") no-repeat 0 0;    
+}
+input[type="checkbox"]:checked + .checkbox-styled {
+    background: url("/images/checkbox-on.png") no-repeat 50% 50%;
+}
+.label {
+    display: inline-block;
+    position: absolute;
+    left: 40px;
+    line-height: 21px;
+}
     margin-top: 32px;
 }
