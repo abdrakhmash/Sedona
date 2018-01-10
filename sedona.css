@@ -508,6 +508,77 @@ input[type="checkbox"]:checked + .checkbox-styled {
     left: 40px;
     line-height: 21px;
 }
+.price {
+    float: right;
+    width: 297px;
+}
+.price-input {
+    display: flex;
+    position: relative;
+    height: 38px;
+    box-sizing: border-box;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid #ffffff;
+    border-radius: 3px; 
+}
+.price-input::after {
+    position: absolute;
+    left: 145px;
+    top: 5px;
+    width: 2px;
+    height: 24px;
+    background-color: #ffffff;
+}
+.price input[type="number"] {
+    min-width: 40px; 
+    flex-grow: 0;
+    background: none;
+    border: none; 
+    color: #ffffff;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;  
+}
+.price-range {
+    position: relative;
+    height: 30px;
+    width: 297px;
+}
+.range-line {
+    margin-top: 20px;
+    width: 297px;
+    height: 3px;
+    background-color: gray;
+}
+.bar {
+    position: absolute;
+    height: 3px;
+    background-color: #ffffff;
+    opacity: 1;
+}
+.range-toggle {
+    position: absolute;
+    top: -10px;
+    width: 3px;
+    height: 3px;
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    background: #ababab; 
+}
+.maxPrice {
+    left: 70%;
+}
+.search-btn {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 137px;
+    height: 36px;
+    border: 2px solid #ffffff;
+    border-radius: 3px;
+    color: #ffffff;
+    background: none;
+}
 .result.sorting-panel {
     position: relative;
     width: 1200px;

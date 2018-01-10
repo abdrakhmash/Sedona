@@ -57,11 +57,17 @@
                         </label>
                     </div>
                     <div class="price">
-                        <p class="subtitle">СТОИМОСТЬ В СУТКИ (Р):</p>
-                        <input type="range" name="minPrice" value="0" min="0" max="5000" step="1">
-                        <input type="range" name="maxPrice" value="3000" min="0" max="5000" step="1">
-                        <input type="submit" value="ПОКАЗАТЬ">
-                    </div>
+                        <div class="price-input">
+                            <div>ОТ <input type="number" class="minValue" value="0" min="0" step="1"></div>
+                            <div>ДО <input type="number" class="maxValue" value="3000" max="5000" step="1"></div>
+                        </div>
+                        <div class="price-range">
+                            <div class="range-line"><div class="bar" style="width: 60%; left: 0px; "></div></div>
+                            <div class="range-toggle minPrice" style="left: 0px"></div>
+                            <div class="range-toggle maxPrice" style="left: 178px"></div>
+                        </div>
+                    </div> 
+                    <input type="submit">
                 </form>
             </div>         
             <div class="result sorting-panel">
@@ -149,5 +155,27 @@
                 <div class="third"></div>
             </div>
         </footer>
+        <script>
+            var minValue = document.querySelector(".minValue");
+            var maxValue = document.querySelector(".maxValue");
+            var minPrice = document.querySelector(".minPrice");
+            var maxPrice = document.querySelector(".maxPrice");
+            var bar = document.querySelector(".bar");
+            var barChange = function () {    
+                
+                bar.style = "width: " + ((parseInt(maxValue.value) - parseInt(minValue.value))/5000*100) +"%;" + "left: " + (parseInt(minValue.value)/5000*297) + "px";
+                
+                minPrice.style = "left: " + (parseInt(minValue.value)/5000*297) + "px";
+                
+                maxPrice.style = "left: " + (parseInt(maxValue.value)/5000*297) + "px";
+                
+            };
+            
+            minValue.addEventListener("change", function() {barChange()});
+            maxValue.addEventListener("change", function() {barChange()});
+            minValue.addEventListener("click", function() {barChange()});
+            maxValue.addEventListener("click", function() {barChange()});
+                        
+        </script>
     </body>
 </html>
