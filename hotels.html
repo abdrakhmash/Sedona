@@ -9,20 +9,25 @@
         <header class="header hotels">
             <nav class="header-navigation clearfix">
                 <ul>
-                    <a href="#"><li class="refs-info">ИНФОРМАЦИЯ</li></a>
-                    <a href="#"><li class="refs-media">ФОТО И ВИДЕО</li></a>
+                    <a href="https://en.wikipedia.org/wiki/Sedona,_Arizona"><li class="refs-info">ИНФОРМАЦИЯ</li></a>
+                    <a href="https://www.google.ru/search?q=sedona+arizona+state+photo&newwindow=1&source=lnms&tbm=isch&sa=X&ved=0ahUKEwievMmxysXYAhXCJJoKHXraD_EQ_AUICigB&biw=1515&bih=780"><li class="refs-media">ФОТО И ВИДЕО</li></a>
+                    
                     <li class="logo"><img src="images/logo-top.png" alt="Логотип Седоны"></li>
-                    <a href="#"><li class="refs-map">КАРТ<span class="somefuckwithletterspacing">А  </span>ШТ<span class="somefuckwithletterspacing">АТА</span></li></a>
-                    <a href="#"><li class="refs-hotels">ГОСТИНИЦЫ</li></a>  
+                    
+                    <a href="../sedona/index.html#map"><li class="refs-map">КАРТ<span class="letterspacing">А  </span>ШТ<span class="letterspacing">АТА</span></li></a>
+                    <a href="hotels.html"><li class="refs-hotels">ГОСТИНИЦЫ</li></a>  
                 </ul>
             </nav>
         </header>        
         <div class="hotels contents-container">
             <div class="search-panel clearfix">
+                
+                
+                
                 <form class="search-parameters">
                     <div class="checkbox infrastructure">
                         <p class="subtitle">ИНФРАСТРУКТУРА:</p>
-                        <label class="checkbox-option">
+                        <label class="checkbox-option checkbox-option-one">
                             <input class="checkbox-native" type="checkbox" name="infrastructure" checked>
                             <span class="checkbox-styled"></span>
                             <span class="label">БАССЕЙН</span>
@@ -38,9 +43,10 @@
                             <span class="label">WI-FI</span>
                         </label>
                     </div>
+                    
                     <div class="checkbox type">
                         <p class="subtitle">ТИП ЖИЛЬЯ:</p>
-                        <label class="checkbox-option">
+                        <label class="checkbox-option checkbox-option-one">
                             <input class="checkbox-native" type="checkbox" name="infrastructure" checked>
                             <span class="checkbox-styled"></span>
                             <span class="label">ГОСТИНИЦА</span>
@@ -56,32 +62,47 @@
                             <span class="label">АПАРТАМЕНТЫ</span>
                         </label>
                     </div>
-                    <div class="price">
-                        <div class="price-input">
-                            <div>ОТ <input type="number" class="minValue" value="0" min="0" step="1"></div>
-                            <div>ДО <input type="number" class="maxValue" value="3000" max="5000" step="1"></div>
-                        </div>
-                        <div class="price-range">
-                            <div class="range-line"><div class="bar" style="width: 60%; left: 0px; "></div></div>
-                            <div class="range-toggle minPrice" style="left: 0px"></div>
-                            <div class="range-toggle maxPrice" style="left: 178px"></div>
-                        </div>
-                    </div> 
-                    <input type="submit">
+                    
+                    
+                    <div class="container-price-btn">
+                        <div class="price">
+                            <p class="subtitle">СТОИМОСТЬ В СУТКИ (P):</p>
+                            <div class="price-input">
+                                <div class="value-container minValue-container">ОТ<input type="number" class="minValue" value="0" min="0" step="1"></div>
+                                <div class="value-container maxValue-container">ДО<input type="number" class="maxValue" value="3000" max="4300" step="1"></div>
+                            </div>
+                            
+                            <div class="price-range">
+                                <div class="range-line"><div class="bar" style="width: 73.4%; left: 0px; "></div></div>
+                                <div class="range-toggle minPrice" style="left: 0%"></div>
+                                <div class="range-toggle maxPrice" style="right: 26.4%"></div>
+                            </div>
+                        </div> 
+                        
+                        <!--div class="search-btn">ПОКАЗАТЬ</div-->
+                        <input type="submit" value="ПОКАЗАТЬ" class="search-btn"/>
+                    </div>
                 </form>
-            </div>         
+                
+                    
+            </div>    
+            
+            
             <div class="result sorting-panel">
                 <div class="found">НАЙДЕНО: 3</div>
                 <div class="sorting">СОРТИРОВКА:</div>
-                <div class="sortBy">ПО ЦЕНЕ</div>
+                <div class="sortBy active">ПО ЦЕНЕ</div>
                 <div class="sortBy">ПО ТИПУ</div>
                 <div class="sortBy">ПО РЕЙТИНГУ</div>
                 <div class="btns clearfix">
-                    <div class="sort-btn sortUp"></div>
                     <div class="sort-btn sortDown"></div>
+                    <div class="sort-btn sortUp"></div>
                 </div>
             </div>
+            
+            
             <div class="result-items">
+                
                 <div class="results results-amara">
                     <div class="results-photo">
                         <img src="images/amara.jpg" alt="Фото гостиницы">
@@ -100,6 +121,7 @@
                         <div class="results-raiting">РЕЙТИНГ: 8,5</div>
                     </div>
                 </div>
+                
                 <div class="results results-desert">
                     <div class="results-photo">
                         <img src="images/desert.jpg" alt="Фото гостиницы">
@@ -118,6 +140,7 @@
                         <div class="results-raiting">РЕЙТИНГ: 8,9</div>
                     </div>
                 </div>
+                
                 <div class="results results-villas">
                     <div class="results-photo">
                         <img src="images/villas.jpg" alt="Фото гостиницы">
@@ -129,32 +152,39 @@
                             <span class="results-price">ОТ 2000 Р.</span>
                         </p>
                         <a href=#><div class="about-btn bluebox">ПОДРОБНЕЕ</div></a>
+                        <a href=https://www.booking.com/hotel/us/villas-at-poco-diablo.ru.html target="_blank"><div class="booking-btn">ЗАБРОНИРОВАТЬ</div></a>
                     </div>
                     <div class="raiting">
                         <div class="results-stars"></div>
                         <div class="results-raiting">РЕЙТИНГ: 9,2</div>
                     </div>
                 </div>
+                
             </div>
         </div>
+        
+        
         <footer class="footer hotels">
+            
             <div class=" container-refs clearfix">
                 <div class="hashtag">#VISITSEDONA</div>
+                
                 <div class="social">
-                <a href="#" alt="twitter"><div class="social-icon social-twitter"></div></a>
-                <a href="#" alt="fb"><div class="social-icon social-fb"></div></a>
-                <a href="#" alt="youtube"><div class="social-icon social-youtube"></div></a>
+                    <a href="#" alt="twitter"><div class="social-icon social-twitter"></div></a>
+                    <a href="#" alt="fb"><div class="social-icon social-fb"></div></a>
+                    <a href="#" alt="youtube"><div class="social-icon social-youtube"></div></a>
                 </div>
+                
                 <div class="htmlAcademy">
-                <a href="#" alt="htmlacademy">
-                    <div class="creator"><div class="htmlLogo"></div>WEBSITE BY         
-                    </div>
-                </a>
+                    <a href="#" alt="htmlacademy">
+                        <div class="creator"><div class="htmlLogo"></div>WEBSITE BY         
+                        </div>
+                    </a>
                 </div>
-                <div class="second"></div>
-                <div class="third"></div>
             </div>
         </footer>
+        
+        
         <script>
             var minValue = document.querySelector(".minValue");
             var maxValue = document.querySelector(".maxValue");
@@ -163,11 +193,12 @@
             var bar = document.querySelector(".bar");
             var barChange = function () {    
                 
-                bar.style = "width: " + ((parseInt(maxValue.value) - parseInt(minValue.value))/5000*100) +"%;" + "left: " + (parseInt(minValue.value)/5000*297) + "px";
+                bar.style = "width: " + ((parseInt(maxValue.value) - parseInt(minValue.value))/4300*100) +"%;" + "left: " + (parseInt(minValue.value)/4300*100) + "%";
                 
-                minPrice.style = "left: " + (parseInt(minValue.value)/5000*297) + "px";
+                minPrice.style = "left: " + (parseInt(minValue.value)/4300*100) + "%";
                 
-                maxPrice.style = "left: " + (parseInt(maxValue.value)/5000*297) + "px";
+                maxPrice.style = "right: " + (100-(parseInt(maxValue.value)/4300*100)-4) + "%";
+                console.log(100-(parseInt(maxValue.value)/4300*100)-4);
                 
             };
             
