@@ -182,31 +182,11 @@
                     </a>
                 </div>
             </div>
+            
         </footer>
         
         
-        <script>
-            var minValue = document.querySelector(".minValue");
-            var maxValue = document.querySelector(".maxValue");
-            var minPrice = document.querySelector(".minPrice");
-            var maxPrice = document.querySelector(".maxPrice");
-            var bar = document.querySelector(".bar");
-            var barChange = function () {    
-                
-                bar.style = "width: " + ((parseInt(maxValue.value) - parseInt(minValue.value))/4300*100) +"%;" + "left: " + (parseInt(minValue.value)/4300*100) + "%";
-                
-                minPrice.style = "left: " + (parseInt(minValue.value)/4300*100) + "%";
-                
-                maxPrice.style = "right: " + (100-(parseInt(maxValue.value)/4300*100)-4) + "%";
-                console.log(100-(parseInt(maxValue.value)/4300*100)-4);
-                
-            };
-            
-            minValue.addEventListener("change", function() {barChange()});
-            maxValue.addEventListener("change", function() {barChange()});
-            minValue.addEventListener("click", function() {barChange()});
-            maxValue.addEventListener("click", function() {barChange()});
-                        
-        </script>
+        <script src="/js/hotels.js"></script>
+        
     </body>
 </html>
