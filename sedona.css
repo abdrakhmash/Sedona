@@ -29,6 +29,24 @@ h2 {
     color: #ffffff;
     background-color: #81b3d2;
 }
+.bluebox.btn:hover {
+    background-color: #669ec0;
+}
+.bluebox.btn:active {
+    color: #88b6d1;
+    background-color: #5496bd;
+}
+.brownbox {
+    color: #ffffff;
+    background-color: #766357;
+}
+.brownbox.btn:hover {
+    background-color: #604e43;
+}
+.brownbox.btn:active {
+    color: #857871;
+    background-color: #503e33;
+}
 .header {
     width: 1200px;
     margin-left: auto;
@@ -56,10 +74,19 @@ h2 {
     padding-right: 0px;
     vertical-align: middle;
     font-size: 14px;
-    color: rgb(0, 0, 0);
+    color: #000000;
     font-weight: bold;
     line-height: 10px;
     list-style: none;
+}
+.header-navigation li:hover {
+    color: #81b3d2;
+}
+.header-navigation li:active {
+    color: #b2b2b2;
+}
+.header-navigation li.active {
+    color: #766357;
 }
 .header-navigation .refs-info {
     padding-left: 72px;
@@ -277,15 +304,29 @@ h2 {
     float: right;
     position: relative;
     box-sizing: border-box;
+    width: 346px;
+    height: 38px;
+    margin-bottom: 28px;
+    padding: 5px;
+    border: none;
     font-family: 'PT Sans';
     font-size: 14px;
     font-weight: bold;
-    padding: 5px;
-    margin-bottom: 28px;
-    width: 346px;
-    height: 38px;
-    border: none;
     background-color: #f2f2f2;    
+}
+.trip-form-on input[type="date"]:hover,
+.trip-form-on input[type="number"]:hover {
+    background-color: #ebebeb;
+}
+.trip-form-on input[type="date"]:focus {
+    background-color: #ffffff;
+    outline: none;
+    border: 2px solid #e5e5e5;
+    border-radius: 3px;
+}
+.trip-form-on input[type="number"]:focus {
+    outline: none;
+    background-color: #f2f2f2;
 }
 .trip-form-on label {
     display: block;
@@ -298,8 +339,6 @@ h2 {
 .trip-form-on .date {
     margin-bottom: 1px;
 }
-
-
 input[type="number"], input[type="date"] {
   -webkit-appearance: textfield;
   -moz-appearance: textfield;
@@ -321,6 +360,12 @@ input[type="date"]::-webkit-outer-spin-button{
     opacity: 1;
     background: url("images/calendar.png") no-repeat 50% 50%;  
 }
+.trip-form-on input[type="date"]::-webkit-calendar-picker-indicator:hover {
+    background: url("images/calendar-hover.png") no-repeat 50% 50%;  
+}
+.trip-form-on input[type="date"]::-webkit-calendar-picker-indicator:active {
+    background: url("images/calendar-active.png") no-repeat 50% 50%;  
+}
 .number-input {
     border: none;
     display: inline-flex;
@@ -336,16 +381,21 @@ input[type="date"]::-webkit-outer-spin-button{
 }
 .number-input .btn {
     margin: 0px;
-    box-sizing: border-box;
-    background-color: #f2f2f2;
-    border: none;
-    vertical-align: middle;
-    text-align: center;
     width: 37px;
     height: 37px;
+    border: none;
     font-size: 22px;
+    vertical-align: middle;
+    text-align: center;
     cursor: pointer; 
     color: #a9a9a9;
+    background-color: #f2f2f2;
+}
+.number-input .btn:hover {
+    color: #000000;
+}
+.number-input .btn:active {
+    color: #81b3d2;
 }
 .trip-form-on input[type=number] {
     font-family: 'PT Sans', sans-serif;
@@ -407,9 +457,21 @@ label.children {
 }
 .social-icon {
     display: inline-block;
+    position: relative;
     width: 46px;
     height: 48px;
     margin-right: 2px;
+}
+.social-icon:active:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 46px;
+    height: 48px;
+    background-color: #5496bd;
+    opacity: 0.7;    
 }
 .social-twitter {
     background: #81b3d2 url("images/t.png") no-repeat 50% 50%;
@@ -442,11 +504,11 @@ label.children {
     margin-left: -11px;
     background: url("images/logo_html.png") no-repeat 50% 50%;
 }
-.header.hotels {
-    height: 56px;
+.htmlLogo:hover {
+    background: url("images/logo_html-hover.png") no-repeat 50% 50%;
 }
-.footer.hotels {
-    height: 120px;
+.htmlLogo:active {
+    background: url("images/logo_html-active.png") no-repeat 50% 50%;
 }
 .hotels.contents-container {
     padding: 0px;
@@ -505,17 +567,33 @@ label.children {
 input[type="checkbox"]:checked + .checkbox-styled {
     background: url("images/checkbox-on.png") no-repeat 50% 50%;
 }
+input[type="checkbox"]:disabled ~ span {
+    color: #6a6a6a;
+}
+input[type="checkbox"]:checked:disabled ~ span {
+    color: #6a6a6a;
+}
+input[type="checkbox"]:disabled + span {
+    background: url("images/checkbox-off-blocked.png") no-repeat 50% 50%;
+}
+input[type="checkbox"]:checked:disabled + span {
+    background: url("images/checkbox-on-blocked.png") no-repeat 50% 50%;
+}
 .label {
     display: inline-block;
     position: absolute;
     left: 40px;
     /*line-height: 23px;*/
 }
-.type .label {
-    left: 42px;
+input[type="checkbox"]:disabled ++ .label,
+.label + input[type="checkbox"]:checked:disabled   {
+    color: #6a6a6a;
 }
 .checkbox.infrastructure {
     margin-right: 105px;
+}
+.checkbox.type .label {
+    left: 42px;
 }
 .container-price-btn {
     float: right;
@@ -573,6 +651,11 @@ input[type="checkbox"]:checked + .checkbox-styled {
     font-family: 'PT Sans', sans-serif;
     font-size: 16px;  
 }
+.price input[type="number"]:focus {
+    outline: none;
+    border: 1px solid #a3a3a3;
+    border-radius: 3px;
+}
 .price-range {
     position: relative;
     margin-bottom: 31px;
@@ -601,7 +684,10 @@ input[type="checkbox"]:checked + .checkbox-styled {
     border-radius: 50%;
     background: #ababab; 
 }
-
+.range-toggle:hover {
+    width: 5px;
+    height: 5px;
+}
 .search-btn {
     display: block;
     margin-left: auto;
@@ -617,6 +703,10 @@ input[type="checkbox"]:checked + .checkbox-styled {
     border-radius: 3px;
     color: #ffffff;
     background: none;
+}
+.search-btn:hover {
+    color: #000000;
+    background-color: #ffffff;
 }
 .result.sorting-panel {
     width: 1200px;
@@ -650,9 +740,17 @@ input[type="checkbox"]:checked + .checkbox-styled {
 .sorting-panel .sortBy {
     margin-top: 0px;
     margin-right: 30px;
-    border-bottom: 1px dotted #d0d0d0;
+    border-bottom: 1px dotted #81b3d2;
     line-height: 14px; 
     color: #d0d0d0;
+    cursor: pointer;
+}
+.sorting-panel .sortBy:hover {
+    color: #81b3d2;
+}
+.sorting-panel .sortBy:active {
+    color: #000000;
+    border-bottom: none;
 }
 .sortBy.active {
     border-bottom: none;
@@ -669,13 +767,28 @@ input[type="checkbox"]:checked + .checkbox-styled {
     width: 10px;
     height: 11px;
     margin-left: 13px;
+    cursor: pointer;
 }
 .sortUp {
-    background: url("images/sortUp.png") no-repeat 50% 50%;
+    background: url("images/sortUp-default.png") no-repeat 50% 50%;
     margin-top: 7px;
 }
+.sortUp:hover {
+    background: url("images/sortUp-hover.png") no-repeat 50% 50%;
+}
+.sortUp:active,
+.sortUp.active {
+    background: url("images/sortUp-active.png") no-repeat 50% 50%;
+}
 .sortDown {
-    background: url("images/sortDown.png") no-repeat 50% 50%;
+    background: url("images/sortDown-default.png") no-repeat 50% 50%;
+}
+.sortDown:hover {
+    background: url("images/sortDown-hover.png") no-repeat 50% 50%;
+}
+.sortDown:active,
+.sortDown.active {
+    background: url("images/sortDown-active.png") no-repeat 50% 50%;
 }
 .results {
     position: relative;
@@ -705,6 +818,12 @@ input[type="checkbox"]:checked + .checkbox-styled {
     text-align: left;
     line-height: 16px;
     word-spacing: 1px;
+}
+.results-name:hover {
+    color: #81b3d2;
+}
+.results-name:active {
+    color: #b2b2b2;
 }
 .results-type {
     float: left;
