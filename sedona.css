@@ -21,10 +21,6 @@ h2 {
     text-align: center;
     font-size: 14px;
 }
-.br {
-    padding-right: 15px;
-    padding-left: 15px;
-}
 .bluebox {
     color: #ffffff;
     background-color: #81b3d2;
@@ -68,16 +64,19 @@ h2 {
     width: 239px;
     padding-top: 18px;
     list-style: none;
+}
+.header-navigation a {
     color: #000000;
     font-weight: bold;
+    text-decoration: none;
 }
-.header-navigation li:hover {
+.header-navigation a:hover {
     color: #81b3d2;
 }
-.header-navigation li:active {
+.header-navigation a:active {
     color: #b2b2b2;
 }
-.header-navigation li.active {
+.header-navigation li.active a {
     color: #766357;
 }
 .header-navigation .refs-info {
@@ -185,8 +184,8 @@ h2 {
 }
 .features .contents-text {
     margin-bottom: 21px;
-    padding-left: 12.5%;
-    padding-right: 12.5%;
+    padding-left: 14.5%;
+    padding-right: 14.5%;
     line-height: 1.5;
 }
 .features-img {
@@ -430,6 +429,7 @@ input[type="date"]::-webkit-outer-spin-button{
 .trip-form-on input[type=number] {
     width: 40px;
     height: 38px;
+    box-sizing: border-box;
     text-align: center;
     font-family: 'PT Sans', 'Arial', sans-serif;
     font-size: 16px;    
@@ -523,6 +523,7 @@ input[type="date"]::-webkit-outer-spin-button{
     color: #000000;
 }
 .htmlLogo {
+    display: block;
     float: right;
     width: 151px;
     height: 41px;
@@ -611,7 +612,7 @@ input[type="checkbox"]:checked:disabled + span {
 .checkbox.infrastructure {
     margin-right: 105px;
 }
-.checkbox.type .label {
+.checkbox.hoteltype .label {
     left: 42px;
 }
 .container-price-btn {
@@ -738,7 +739,7 @@ input[type="checkbox"]:checked:disabled + span {
 }
 .sorting-panel div {
     display: inline-block;
-    vertical-align: center;
+    vertical-align: baseline;
 }
 .sorting-panel .found {
     margin-top: 3px;
@@ -856,23 +857,25 @@ input[type="checkbox"]:checked:disabled + span {
     line-height: 1;
 }
 .about-btn {
+    display: block;
     float: left;
     width: 110px;
     height: 27px;
     text-align: center;
     line-height: 26px;
+    text-decoration: none;
     font-weight: bold;
 }
 .booking-btn {
+    display: block;
     float: left;
     margin-left: 6px;
     width: 142px;
     height: 27px;
     text-align: center;
     line-height: 26px;
+    text-decoration: none;
     font-weight: bold;
-    color: #ffffff;
-    background-color: #766357;
 }
 .results .raiting {
     float: right; 
